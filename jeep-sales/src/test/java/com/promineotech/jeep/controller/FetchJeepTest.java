@@ -29,8 +29,7 @@ class FetchJeepTest extends fetchJeepTestSupport{
     String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
     
     //When: a connection is made to the URI
-   ResponseEntity<Jeep> response = getRestTemplate().getForEntity(uri,Jeep.class);
-    //check getRestTemplate 
+   ResponseEntity<Jeep> response = getRestTemplate().getForEntity(uri, Jeep.class);
  
    
     //Then: a valid success (OK - 200) status code is returned
