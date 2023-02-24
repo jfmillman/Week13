@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.6</version>
+    <version>2.6.1</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.promineotech</groupId>
@@ -39,12 +39,35 @@
       <scope>test</scope>
     </dependency>
  
+ <!-- OpenAPI Dependency   -->
   
  <dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-ui</artifactId>
-    <version>1.6.14</version>
+    <version>1.5.5</version>
 </dependency>
+
+<!-- Database dependencies  -->
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jdbc</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
+
+
+<!-- Test dependencies   -->
+
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
+</dependency>
+
 
  </dependencies>
   <build>
